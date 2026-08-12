@@ -3,6 +3,7 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     [SerializeField]private RectTransform _optionsPanel;
+    [SerializeField] private RectTransform _textBox;
     void Start()
     {
         
@@ -18,4 +19,9 @@ public class UIController : MonoBehaviour
     {
         _optionsPanel.gameObject.SetActive(isActive);
     }
+
+    public void ShowTextBox(bool isActive)
+    {
+        _textBox.gameObject.SetActive(isActive);
+    }      
 }
